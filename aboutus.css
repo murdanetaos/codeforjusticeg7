@@ -1,0 +1,80 @@
+/* nav bar for rn  */
+.nav-bar{
+background-color: #6f549a;
+height: 5vh;
+width: 110vw;
+
+}
+/* hero image and first portion of site */
+.hero-image{
+    background-image: linear-gradient(#6f549a, rgba(206, 194, 238, 0.3));
+    background-position: cover;
+    height: 60vh;
+    width: 100vw;
+
+}
+.hero-text{
+ text-align: center;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ font-size: 3rem;
+  position: sticky;
+  transform:translate(0%,-330%) ;
+  color:white;
+  text-shadow: 
+  
+}
+.about-us{
+   text-align: center;
+   transform: translate(0%,-40%);
+   
+}
+.description{
+    padding:2rem;
+    border: 1px solid #29255D;
+    text-align: center;
+
+}
+
+
+/* pictures of team */
+.picture {
+    width: 12rem;
+}
+.picture-m{
+    height: 12rem;
+    width:10rem;
+}
+
+/* whole page  */
+.container{
+   display: grid;
+   grid-template-columns: ;
+    
+}
+
+.cards{
+    max-width: 1200px;
+    margin:0 auto;
+    display: grid;
+    gap:1rem;
+    text-align: center;
+}
+.card{
+    padding: 0.5rem;
+    height: 20rem;
+}
+/* text of meet the team */
+.intro{
+    background-color: whitesmoke;
+    color: #29255D; 
+
+}
+
+/* media query for */
+@media(max-width:450px;){
+.cards{
+   display: grid;
+   grid-template-columns: 1fr 1fr ;
+}
+}
+
