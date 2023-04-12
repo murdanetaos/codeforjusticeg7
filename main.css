@@ -115,6 +115,7 @@ body {
 .contactMe {
   display: flex;
   justify-content: center;
+  bottom: 0px;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5rem;
@@ -133,12 +134,11 @@ body {
     display: block;
     margin: auto;
   }
+  .p {
+    padding: 5%;
+  }
 }
 
-.nav-links li {
-  opacity: 1;
-  transition: all 0.3s ease-in;
-}
 @media screen and (max-width: 540px) {
   .h1 {
     display: none;
@@ -147,7 +147,7 @@ body {
     font-size: 3rem;
   }
   .p {
-    font-size: 0.5rem;
+    font-size: 0.75rem;
   }
   .main {
     height: 60%;
