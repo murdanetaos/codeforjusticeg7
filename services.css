@@ -1,0 +1,53 @@
+
+
+
+.services {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: whitesmoke;
+    font-family: "Chivo Mono", monospace;
+    color:#29255D;
+    margin: 0;
+    padding: 0;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    font-size: 125%;
+    font-family: "Chivo Mono", monospace;;
+    padding:100px 70px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.mobile-picture{
+    display: flex;
+    text-align: center;
+    background-image: cover;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+}
+
+.services:hover {
+   
+    background: #6F549A;
+    box-shadow: #6F549A;
+    box-shadow: 3px 3px 3px whitesmoke;
+    z-index: 2;
+    color: whitesmoke;
+}
+
+.container1 h1 {
+    text-align: center;
+}
+
+
