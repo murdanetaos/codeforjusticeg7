@@ -8,7 +8,7 @@
 }
 body {
     background: whitesmoke;
-    font-family: poppins,sans-serif;
+    font-family: "Chivo Mono", monospace;
     color:#29255D;
     margin: 0;
     padding: 0;
@@ -20,6 +20,7 @@ body {
     width: 100%;
     margin: auto;
     font-size: 125%;
+    font-family: "Chivo Mono", monospace;;
     padding:100px 70px;
     text-align: center;
     background-color: whitesmoke;
@@ -27,11 +28,12 @@ body {
 
 .mobile-picture{
     display: flex;
+    text-align: center;
     background-image: cover;
     align-items: stretch;
     flex-wrap: wrap;
     width: 100%;
-    /* height:40%; */
+
 
 }
 
@@ -44,6 +46,8 @@ body {
     color: whitesmoke;
 }
 
-/* .services{
-    font-family:"Regular"400, serif;
-} */
+.container1 h1 {
+    text-align: center;
+}
+
+
