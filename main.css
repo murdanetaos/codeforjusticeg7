@@ -2,6 +2,10 @@ html,
 body {
   height: 100%;
   margin: 0%;
+  /* For paragraphs */
+  font-family: "Chivo Mono", monospace;
+  /* For titles */
+  /* font-family: "Raleway", sans-serif; */
 }
 
 /* NAV NAVNAV NAV NAV NAV NAV NAVNAV NAV NAV NAV NAV NAVNAV NAV NAV NAV */
@@ -66,38 +70,54 @@ body {
   margin-top: 10%;
 }
 
+/* SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION SECTION */
+
 .main {
   background-image: url(/assets/C.jpg);
   background-size: 40%;
-  /* background-repeat: no-repeat; */
-  display: flex;
-  padding-left: 10rem;
+  height: 100%;
 }
 .h2 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 6rem;
+  font-size: 5rem;
+  margin-top: -0.5%;
 }
 
 .p {
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
   background-color: navajowhite;
-  margin: 10rem;
-  padding: 5rem;
+  padding: 3rem;
   font-size: 1.5rem;
+  border-radius: 10px;
+  font-family: "Chivo Mono", monospace;
 }
 
-#back {
-  margin: 5%;
-  scroll-behavior: smooth;
+.button1 {
+  text-decoration: none;
+  color: black;
 }
 
+.button {
+  border: none;
+  background-color: #fddb3a;
+  padding: 20px 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 10px;
+}
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER*/
 .contactMe {
   display: flex;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #0c092a;
 }
 
@@ -107,25 +127,29 @@ body {
 
 /* MEDIAQUERY MEDIAQUERY MEDIAQUERY MEDIAQUERY MEDIAQUERY MEDIAQUERY MEDIAQUERY MEDIAQUERY*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 830px) {
   .nav-links {
-    position: fixed;
-    background-color: #fff;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 0.3s ease-out;
-    pointer-events: none;
-  }
-
-  .nav-links li {
-    opacity: 0;
+    position: relative;
+    display: block;
+    margin: auto;
   }
 }
 
 .nav-links li {
   opacity: 1;
   transition: all 0.3s ease-in;
+}
+@media screen and (max-width: 540px) {
+  .h1 {
+    display: none;
+  }
+  .h2 {
+    font-size: 3rem;
+  }
+  .p {
+    font-size: 0.5rem;
+  }
+  .main {
+    height: 60%;
+  }
 }
