@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -11,12 +13,14 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  margin-bottom: none;
 }
 
 .carousel > ul {
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .slide {
@@ -73,12 +77,175 @@ body {
 .carousel-button.next {
   right: 1rem;
 }
+
 .form{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border-radius: 1.25rem;
   box-sizing: border-box;
   height: auto;
   padding: 1.25rem;
-  width: 20rem;
+  width: 60rem;
+  background: rgb(111, 84, 154);
+  background: linear-gradient(90deg, rgba(111, 84, 154, 1) 0%, rgba(41, 37, 93, 1) 65%);
+  font-family: 'Open Sans', sans-serif;
+  margin-top: none;
+  margin-bottom: 1rem;
+    margin-left: 16rem;
+}
+
+label{
+  color: whitesmoke;
+  font-size: medium3;
+}
+
+.title{
+  color: whitesmoke;
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+
+input{
+ margin: .5rem;
+}
+
+button{
+  background-color:  rgb(102, 28, 151);
+  color: whitesmoke;
+  border-radius: .5rem;
+  width: 6rem;
+  border: none;
+  font-family: 'Open Sans',sans-serif;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.contactMe {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50;
+  padding: 1rem;
+  background-color: #0c092a;
+}
+
+.footerimg {
+  width: 40%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c092a;
+  block-size: fit-content;
+  padding: 1rem;
+}
+
+.hero {
+  width: 50%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgb(48, 24, 55);
+  color: #fff;
+}
+
+
+/* iPhones */
+@media only screen 
+  and (max-device-width : 414px) {
+    .form {
+      width: 90%;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+      margin-top: 0;
+    }
+    .slide{
+      height: auto;
+    }
+    
+    .carousel{
+      height: 28rem;
+    }
+    /* CSS for iPhones */
+}
+
+/* iPads */
+@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+    .form {
+      width: 90%;
+      margin-bottom: 13rem;
+      margin-left: 3rem;
+    }
+    .slide{
+      height: auto;
+    }
+    
+    .carousel{
+      height: 28rem;
+    }
+    /* CSS for iPads */
+}
+
+@media (min-width: 1200px) {
+  /* Styles for extra large screens */
+  .h1 {
+    display: none;
+  }
+  .h2 {
+    font-size: 3rem;
+  }
+  .p {
+    font-size: 0.5rem;
+  }
+  .main {
+    height: 60%;
+  }
+
+    .form {
+    width:20%;
+    margin-bottom: 10rem;
+    margin-left: 49rem;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .nav-links {
+    position: relative;
+    display: block;
+    margin: auto;
+  }
+}
+
+.nav-links li {
+  opacity: 1;
+  transition: all 0.3s ease-in;
 }
